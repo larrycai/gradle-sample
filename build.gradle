@@ -1,0 +1,25 @@
+apply plugin: 'groovy'
+
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+}
+
+sourceSets {
+    main {
+        groovy {
+            srcDirs('.')
+            include '*.groovy'
+        }
+    }
+}
+
+// These are the repositories to fetch our build dependencies from
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.codehaus.groovy:groovy-all:2.3.11'
+}
