@@ -9,10 +9,6 @@ buildscript {
 sourceSets {
     main {
         groovy {
-
-sourceSets {
-    main {
-        groovy {
             srcDirs=['src/main/groovy']
         }
     }
