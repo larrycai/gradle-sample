@@ -9,7 +9,7 @@ buildscript {
 sourceSets {
     main {
         groovy {
-            srcDirs('.')
+            srcDirs = ['src/main/groovy']
             include '*.groovy'
         }
     }
